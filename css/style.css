@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    background: #fff url("/image/back.jpg") fixed;
+}
+.container {
+    margin: 0 300px 0 300px;
+    background: linear-gradient(to right, #9cf4f4, #fff)
+}
+.menu-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #9cf4f4, #fff) ;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 2px;
+    
+}
+.list-1 {
+    display: flex;
+}
+.list {
+    margin-left: 30px ;
+    margin-right: 48px ;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;   
+}
+.decoration {
+    text-decoration: none;
+    color: darkblue;
+}
+.pre {
+    display: flex;
+    justify-content: space-around;
+    color: #182653;
+}
+.texter {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+
+    letter-spacing: 0.19px;
+}
+.widthText {
+    max-width: 600px;
+    
+}
+.name {
+    text-align: center;
+}
+.tab-2{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+
+
+/* Слайдер: */
+.slider{
+    max-width: 100%;
+    /* Положение элемента устанавливается относительно его исходной позиции: */
+    position: relative;
+    /* Центрируем по горизонтали: */
+    margin: auto;
+    height: 400px;
+}
+
+/* Картинка масштабируется по отношению к родительскому элементу: */
+.slider .item img {
+    /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+/* Кнопки назад и вперёд: */
+.slider .previous, .slider .next {
+    /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+    cursor: pointer;
+    /* Положение элемента задаётся относительно границ браузера: */
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /* Оформление самих кнопок: */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* Плавное появление фона при наведении курсора: */
+    transition: 0.6s ease;
+    /* Скругление границ: */
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация слайдов: */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    /* Устанавливаем и изменяем степень прозрачности: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+.tab-3 {
+    padding-top: 20px;
+}
+.tab-4 {
+    padding-top: 1px;
+}
+.last-title {
+    text-align: center;
+    color: #182653;
+}
+.forms-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-control {
+    width: 600px;
+    min-height: 30px;
+    margin-top: 15px;
+    border: 1px solid darkblue;
+}
+
+.area {
+    min-height: 60px;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    min-width: 120px;
+    min-height: 40px;
+    background-color: #04e4e4;
+    color: #182653;
+    border: 1px solid #9cf4f4;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
